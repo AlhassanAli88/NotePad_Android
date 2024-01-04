@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Note">
+
+
+    <TextView
+        android:id="@+id/note_titel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is me "
+        android:textColor="@color/black"
+        android:hint="@string/hint_titel"
+        android:textSize="@dimen/mid_font"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_mid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/note_anteckning"
+        android:layout_width="371dp"
+        android:layout_height="113dp"
+        android:layout_marginHorizontal="@dimen/margin_mid"
+        android:layout_marginTop="@dimen/margin_small"
+        android:hint="@string/hint_anteckning"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_titel"
+
+        />
+
+
+    <Button
+        android:id="@+id/note_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/note_cancel"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_anteckning"
+        app:layout_constraintVertical_bias="0.876"
+
+        />
+
+    <Button
+        android:id="@+id/note_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cnacel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/note_save"
+        app:layout_constraintTop_toBottomOf="@+id/note_anteckning"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <Button
+        android:id="@+id/note_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/remove_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_save"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

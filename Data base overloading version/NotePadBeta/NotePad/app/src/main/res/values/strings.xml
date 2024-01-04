@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="lv_titel">Anteckningslista</string>
+    <string name="add_btn">Lägg till nya anteckningar</string>
+    <string name="hint_titel">titel</string>
+    <string name="hint_anteckning">Anteckning</string>
+    <string name="cnacel_btn">Tillbaka</string>
+    <string name="save_btn">Spara</string>
+</resources>
