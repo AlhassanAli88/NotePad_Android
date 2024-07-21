@@ -6,7 +6,7 @@ public class IsItFirstRun {
     private boolean firstRun = true;
 
     private IsItFirstRun() {
-        // Private constructor to prevent instantiation
+
     }
 
     public static synchronized IsItFirstRun getInstance() {

@@ -25,13 +25,7 @@ public class Note extends AppCompatActivity {
     Button removeBtn;
 
 
-    /* MainActivity mainActivity = new MainActivity();
-    int position = mainActivity.positionOfItem;
-    String string = Integer.toString(position);
 
-
-
-    */
 
     DataManager dataManager = new DataManager();
 

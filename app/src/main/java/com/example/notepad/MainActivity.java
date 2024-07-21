@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mainListView = findViewById(R.id.main_list_view);
 
 
-        // added code starts here
+
 
 
         IsItFirstRun isItFirstRun = IsItFirstRun.getInstance();
@@ -69,26 +69,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        /*
-        Cursor cursor = db.rawQuery("SELECT object_data FROM objects ORDER BY id ASC", null);
-        List<MyObject> objectList = new ArrayList<>();
-
-        while (cursor.moveToNext()) {
-            String json = cursor.getString(cursor.getColumnIndex("object_data"));
-            MyObject myObject = convertJsonToObject(json);
-            objectList.add(myObject);
-        }
-        cursor.close();
-
-
-
-         */
 
 
 
 
 
-        // Added code ends here
+
+
         MemberAdapter adapter = new MemberAdapter(this, DataManager.anteckningars );
 
         mainListView.setAdapter(adapter);
@@ -97,11 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Toast.makeText(MainActivity.this, "you pressed the button", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(MainActivity.this,Add.class);
-                //ska bort
-               // Intent intent2 = new Intent(Intent.ACTION_DIAL);
-                // ska bort
                 startActivity(intent);
             }
         });
@@ -122,24 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                /*View temporaryView;
-                temporaryView = LayoutInflater.from(adapter.getContext()).inflate(R.layout.activity_note, parent, false);
 
-               Anteckningar anteckningar = adapter.getItem(position);
-                String anteckningstitel = anteckningar.getTitle();
-                String anteckningensText = anteckningar.getNote();
-
-
-
-                TextView noteTitel = temporaryView.findViewById(R.id.note_titel);
-                EditText noteAnteckning = temporaryView.findViewById(R.id.note_anteckning);
-
-                noteTitel.setText(anteckningstitel);
-                noteAnteckning.setText(anteckningensText);
-
-                Toast.makeText(MainActivity.this, "clicked " + position, Toast.LENGTH_SHORT).show();
-
-                 */
 
 
 
